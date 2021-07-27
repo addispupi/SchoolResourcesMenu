@@ -18,7 +18,7 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
     TextView title;
     ImageView imgSrc;
     ListView catListView;
-    String[] catListBooks, catListTrans;
+    String[] catListMaterials, catListTrans;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
         title = findViewById(R.id.title_view);
         imgSrc = findViewById(R.id.cat_view);
         catListView = findViewById(R.id.cat_list);
-        catListBooks = res.getStringArray(R.array.books);
+        catListMaterials = res.getStringArray(R.array.materials);
         catListTrans = res.getStringArray(R.array.transport);
         catListView.setOnItemClickListener(this);
 
@@ -39,9 +39,9 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
 
 //        Set Resources
         title.setText(catTitle);
-        if(catTitle.equals("Books")) {
-            imgSrc.setImageResource(R.drawable.books_cat);
-            setList(catListBooks);
+        if(catTitle.equals("Learning Materials")) {
+            imgSrc.setImageResource(R.drawable.stationary);
+            setList(catListMaterials);
         }
         else if(catTitle.equals("Transport")) {
             Toast.makeText(this,"OK", Toast.LENGTH_LONG).show();

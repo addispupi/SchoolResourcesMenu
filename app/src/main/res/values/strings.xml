@@ -2,26 +2,25 @@
     <string name="app_name">School Service</string>
     <string-array name="equipments">
         <item>Transport</item>
-        <item>Books</item>
         <item>Learning Materials</item>
         <item>Drawing</item>
         <item>Student Resource</item>
     </string-array>
 
     <!--  Category -->
-    <string-array name="books">
-        <item>Mathematics</item>
-        <item>Physics</item>
-        <item>Biology</item>
-    </string-array>
     <string-array name="transport">
-        <item>Nisan</item>
         <item>Sheger</item>
-        <item>Highger</item>
+    </string-array>
+    <string-array name="materials">
+        <item>Book</item>
+        <item>Microscope</item>
+        <item>Rulers</item>
+        <item>Bags</item>
+        <item>Coloring</item>
     </string-array>
 
     <!--  Detail -->
     <string-array name="mathematics">
-        <item>Mathematics is the study of numbers and problem solving techniques</item>
+        <item>A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.</item>
     </string-array>
 </resources>

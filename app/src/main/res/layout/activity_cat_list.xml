@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_view"
-        android:background="@drawable/books_cat" />
+        android:background="@drawable/stationary" />
 
     <View
         android:id="@+id/divider"
