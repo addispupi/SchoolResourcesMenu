@@ -20,7 +20,5 @@
     </string-array>
 
     <!--  Detail -->
-    <string-array name="mathematics">
-        <item>A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.</item>
-    </string-array>
+    <string name="microscope">A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.</string>
 </resources>
