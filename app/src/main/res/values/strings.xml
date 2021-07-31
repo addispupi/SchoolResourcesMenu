@@ -6,19 +6,4 @@
         <item>Drawing</item>
         <item>Student Resource</item>
     </string-array>
-
-    <!--  Category -->
-    <string-array name="transport">
-        <item>Sheger</item>
-    </string-array>
-    <string-array name="materials">
-        <item>Book</item>
-        <item>Microscope</item>
-        <item>Rulers</item>
-        <item>Bags</item>
-        <item>Coloring</item>
-    </string-array>
-
-    <!--  Detail -->
-    <string name="microscope">A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.</string>
 </resources>

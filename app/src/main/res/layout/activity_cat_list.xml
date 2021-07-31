@@ -44,12 +44,15 @@
     <ListView
         android:id="@+id/cat_list"
         android:layout_width="match_parent"
-        android:layout_height="584dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/divider" />
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        tools:listitem="@layout/list_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
