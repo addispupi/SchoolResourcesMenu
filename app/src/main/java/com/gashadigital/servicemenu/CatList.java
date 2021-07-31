@@ -3,21 +3,15 @@ package com.gashadigital.servicemenu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.renderscript.ScriptGroup;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gashadigital.servicemenu.databinding.ActivityCatListBinding;
-import com.gashadigital.servicemenu.databinding.ActivityMainBinding;
-
-import java.util.ArrayList;
 
 public class CatList extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -46,16 +40,14 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
         title.setText(catTitle);
         if(catTitle.equals("Learning Materials")) {
             imgSrc.setImageResource(R.drawable.stationary);
-//            ArrayAdapter<Materials> catAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Materials.materials);
-//            binding.catList.setAdapter(catAdapter);
-
             CustomAdapter catAdapter = new CustomAdapter(this, Materials.materials);
             binding.catList.setAdapter(catAdapter);
         }
         else if(catTitle.equals("Transport")) {
             Toast.makeText(this,"OK", Toast.LENGTH_LONG).show();
             imgSrc.setImageResource(R.drawable.transport_cat);
-            ArrayAdapter<Materials> catAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Materials.materials);
+            CustomAdapter catAdapter = new CustomAdapter(this, Materials.materials);
+//            ArrayAdapter<Materials> catAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Materials.materials);
             catListView.setAdapter(catAdapter);
         }
 
@@ -71,6 +63,6 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
 
         intent.putExtras(extra);
         startActivity(intent);
-//        Toast.makeText(this, detail, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, detail, Toast.LENGTH_LONG).show();
     }
 }

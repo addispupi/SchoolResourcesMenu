@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">School Service</string>
+    <string name="title">Title</string>
+    <string name="description_category">Description Category</string>
+    <string name="cat_image">Category Image</string>
+    <string name="cat_title">Category Title</string>
     <string-array name="equipments">
         <item>Transport</item>
         <item>Learning Materials</item>

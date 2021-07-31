@@ -8,9 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -36,6 +33,7 @@ public class CustomAdapter extends ArrayAdapter<Materials> {
         materialImage.setImageResource(materials.getImg());
         materialTitle.setText(materials.getTitle());
         materialDescription.setText(materials.getDescription());
-        return super.getView(position, convertView, parent);
+//        return super.getView(position, convertView, parent);
+        return convertView;
     }
 }

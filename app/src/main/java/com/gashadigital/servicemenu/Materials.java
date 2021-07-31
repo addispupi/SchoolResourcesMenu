@@ -1,9 +1,9 @@
 package com.gashadigital.servicemenu;
 
 public class Materials {
-    private String title;
-    private String description;
-    private int img;
+    private final String title;
+    private final String description;
+    private final int img;
 
     public static final Materials[] materials = {
             new Materials("Microscope", "A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.", R.drawable.science),
@@ -27,8 +27,8 @@ public class Materials {
     public int getImg() {
         return img;
     }
-    public String toString() {
-        return this.title;
-    }
+//    public String toString() {
+//        return this.title;
+//    }
 
 }

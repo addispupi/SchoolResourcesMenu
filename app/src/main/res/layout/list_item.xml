@@ -6,22 +6,23 @@
 
     <ImageView
         android:id="@+id/thumb_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
         android:src="@drawable/stationary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/cat_image"/>
 
     <TextView
         android:id="@+id/cat_list_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:text="Title"
-        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/title"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@id/thumb_view"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
-        android:text="Description Category"
+        android:text="@string/description_category"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/thumb_view"

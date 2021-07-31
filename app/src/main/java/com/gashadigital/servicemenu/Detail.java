@@ -3,10 +3,8 @@ package com.gashadigital.servicemenu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 public class Detail extends AppCompatActivity {
