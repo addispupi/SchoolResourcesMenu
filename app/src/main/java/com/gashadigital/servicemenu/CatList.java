@@ -27,6 +27,7 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
         super.onCreate(savedInstanceState);
         binding = ActivityCatListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+//        setContentView(R.layout.activity_cat_list);
 
         title = findViewById(R.id.title_view);
         imgSrc = findViewById(R.id.cat_view);
@@ -42,6 +43,7 @@ public class CatList extends AppCompatActivity implements AdapterView.OnItemClic
             imgSrc.setImageResource(R.drawable.stationary);
             CustomAdapter catAdapter = new CustomAdapter(this, Materials.materials);
             binding.catList.setAdapter(catAdapter);
+//            catListView.setAdapter(catAdapter);
         }
         else if(catTitle.equals("Transport")) {
             Toast.makeText(this,"OK", Toast.LENGTH_LONG).show();

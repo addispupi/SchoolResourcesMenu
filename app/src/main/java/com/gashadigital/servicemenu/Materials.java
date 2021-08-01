@@ -6,10 +6,10 @@ public class Materials {
     private final int img;
 
     public static final Materials[] materials = {
-            new Materials("Microscope", "A microscope is a laboratory instrument used to examine objects that are too small to be seen by the naked eye.", R.drawable.science),
-            new Materials("Coloring", "Coloring tools to have", R.drawable.color_pen),
-            new Materials("Books", "Books tools to have", R.drawable.book),
-            new Materials("Rulers", "Rulers tools to have", R.drawable.stationary)
+            new Materials("Microscope", "An Instrument that produces enlarged images of small objects, allowing the observer an exceedingly close view of minute structures at a scale convenient for examination and analysis.", R.drawable.science),
+            new Materials("Coloring", "A coloring materials are any material used for its color", R.drawable.color_pen),
+            new Materials("Books", "A medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover.", R.drawable.book),
+            new Materials("Rulers", "Come in a different shapes sizes and materials. Some of that materials are plastic, wood and metal", R.drawable.stationary)
     };
 
     public Materials(String title, String description, int img) {
